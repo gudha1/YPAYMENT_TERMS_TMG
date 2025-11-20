@@ -1,0 +1,72 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'PaymentTermsTmg', 
+    typeNamePlural: 'PaymentTermsTmgs', 
+    title: {
+      type: #STANDARD, 
+      label: 'Payment terms TMG', 
+      value: 'Paymentterms'
+    }
+  }
+}
+annotate view YI_PaymentTermsTmg with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1,
+    label: 'Payment terms'
+  } ]
+  @UI.facet: [ {
+    id: 'YI_PaymentTermsTmg', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Payment terms TMG', 
+    position: 1 
+  } ]
+  Paymentterms;
+  
+  @UI.identification: [ {
+    position: 2 , 
+    label: 'TotDays'
+  } ]
+  @UI.lineItem: [ {
+    position: 2 , 
+    label: 'TotDays'
+  } ]
+  TotDays;
+  
+  @UI.identification: [ {
+    position: 3 
+  } ]
+  @UI.lineItem: [ {
+    position: 3 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 4 
+  } ]
+  @UI.lineItem: [ {
+    position: 4 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 5 
+  } ]
+  @UI.lineItem: [ {
+    position: 5 
+  } ]
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 6 
+  } ]
+  @UI.lineItem: [ {
+    position: 6 
+  } ]
+  LastChangedAt;
+}

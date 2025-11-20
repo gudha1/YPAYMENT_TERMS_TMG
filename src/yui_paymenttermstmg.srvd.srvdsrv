@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'YI_PaymentTermsTmg_S'
+define service YUI_PAYMENTTERMSTMG {
+  expose YI_PAYMENTTERMSTMG_S as PaymentTermsTmgAll;
+  expose YI_PAYMENTTERMSTMG as PaymentTermsTmg;
+}
